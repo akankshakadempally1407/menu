@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/main_toolbar"/>
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp" >
+
+        </com.daimajia.slider.library.SliderLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="398dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:gravity="fill_vertical"
+            android:text="ABOUT US"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="393dp"
+            android:layout_height="282dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="@font/alice"
+            android:gravity="fill_vertical"
+            android:justificationMode="inter_word"
+            android:text="At Domino’s we care for you and our employees. When you opt for online food delivery on the Domino’s food app, you shouldn’t have to worry about safety.
+
+That is why all our employees are 100% company employees and daily temperature screened before entering our stores. Additionally, we follow the 20s hand wash protocol every hour. For safe online food delivery, our restaurants, bikes, bike boxes and hot bags are being sanitized every 4 hrs.
+
+Besides stores, even our production facilities are following strict hygiene and sanitation protocols and adhere to social distancing norms for the safety of our customers. Go ahead, order food online on the Domino’s food delivery app for safe and convenient online food delivery.
+"
+            android:textColor="#000000"
+            android:textSize="21.5dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:gravity="fill_vertical"
+            android:text="CONTACT"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/p7" />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="107dp"
+                    android:layout_height="42dp"
+                    app:srcCompat="@drawable/p5" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="108dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/p4" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/p1" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/p" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+        <include layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
